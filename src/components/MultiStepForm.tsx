@@ -35,7 +35,7 @@ const MultiStepForm: React.FC = () => {
   const handleSubmit = (): void => {
     // Handle final form submission
     console.log('Form submitted new:', formData);
-   // localStorage.removeItem('formData'); // Clear localStorage after submission
+   localStorage.removeItem('formData'); // Clear localStorage after submission
   };
 
   const renderStep = (): React.JSX.Element | null => {
